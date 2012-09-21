@@ -1,18 +1,25 @@
-body {
-  font: 12px Tahoma, Verdana, sans-serif;
+html.popup {
+  height: 70px;
 }
 body.popup {
-  min-width: 100px;
-  margin: 5px;
+  font: 12px Tahoma, Verdana, sans-serif;
+  width: 100px;
+  height: 61px;
+  margin: 5px 5px 4px 5px;
 }
 body.popup div {
+  height: 20px;
+  line-height: 20px;
   padding: 5px;
+}
+body.popup div span {
+  vertical-align: middle;
 }
 body.popup div:hover {
   cursor: pointer;
-  background-color: #fcfcfc;
+  background-color: #eee;
 }
-#toggleLink {
+#checkLink {
   border-bottom: solid 1px #ccc;
 }
 #coverScreen {
