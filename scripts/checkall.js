@@ -15,7 +15,7 @@
     if (message.recheck) {
       $('body').data('cbTimeout', $('body').data('cbTimeout') * 2);
     } else {
-      $('body').data('cbTimeout', 500);
+      $('body').data('cbTimeout', 1000);
     }
     $('body').data('cbCheck', message.check);
     
@@ -67,7 +67,7 @@
   }
   
   function handleProfileBrowserLoad() {
-    $('body').data('cbTimeout', 500);
+    $('body').data('cbTimeout', 1000);
   }
   
   function resetIsSelectRequestedOnSubmit() {
@@ -75,7 +75,7 @@
   }
   
   $(window).load(function() {
-    $('body').data('cbTimeout', 500);
+    $('body').data('cbTimeout', 1000);
     chrome.extension.onMessage.addListener(handleToggle);
     $('body').on('load', 'div.fbProfileBrowser', handleProfileBrowserLoad);
   });
